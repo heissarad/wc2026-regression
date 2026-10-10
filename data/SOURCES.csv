@@ -1,2 +1,4 @@
 variable,source_name,url,retrieval_date,data_as_of,why_needed
 confed_strength,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-11,WC 1998-2022 only,Historical World Cup results needed to build confederation strength; UEFA coefficient does not exist for non-UEFA teams
+
+match_results,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-11,WC 2026 final scores,Match scores for all 104 matches (response variable) and venue country for host variable
