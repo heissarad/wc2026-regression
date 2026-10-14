@@ -1,18 +1,25 @@
 group,model,CV_RMSE,RMSE_sd,CV_MAE,CV_R2
-experiment,E0 Baseline (predict training mean),2.0131,0.2965,1.6057,-0.077
-experiment,"E1 Linear regression, all 8 variables",2.0192,0.8752,1.3939,-0.3725
-experiment,E2 + Yeo-Johnson transformation,2.2829,2.3271,1.4478,-3.1145
-experiment,"E3 + signed-log of skewed variables, then scaling",1.8803,0.6745,1.3502,-0.072
-experiment,E4 Remove collinear variables (VIF<=5),2.2156,1.1018,1.4861,-0.7197
-experiment,E5 VIF filter + Yeo-Johnson,2.4708,2.7755,1.5262,-4.437
-experiment,E6 Top-3 variables by F-test (inside CV),1.5639,0.273,1.2257,0.3353
-experiment,E6 Top-4 variables by F-test (inside CV),1.5781,0.2753,1.2383,0.323
-experiment,E6 Top-5 variables by F-test (inside CV),1.6739,0.5521,1.2698,0.1019
-experiment,E6 Top-6 variables by F-test (inside CV),1.8461,0.7927,1.3253,-0.0969
-experiment,E7 Ridge regression (alpha by CV),1.9111,0.6872,1.3501,-0.1302
-experiment,"E8 Elastic Net (alpha, l1 by CV)",1.8716,0.6513,1.3366,-0.0733
-competing,Linear regression (baseline linear model),2.0192,0.8752,1.3939,-0.3725
-competing,Random Forest,1.6349,0.2584,1.2912,0.2697
-competing,Gradient Boosting,1.6365,0.2663,1.2849,0.2671
-competing,SVR (RBF kernel),1.6007,0.2961,1.232,0.3129
-competing,k-Nearest Neighbours (k=10),1.7316,0.2979,1.3766,0.1938
+baseline,E0 Baseline (predict training mean),2.0131,0.2965,1.6057,-0.077
+raw,"E1 Linear regression, all 8 variables",2.0192,0.8752,1.3939,-0.3725
+raw,E2 + Yeo-Johnson transformation,2.2829,2.3271,1.4478,-3.1145
+raw,"E3 + signed-log of skewed variables, scaling",1.8803,0.6745,1.3502,-0.072
+raw,E4 Remove collinear variables (VIF<=5),2.2156,1.1018,1.4861,-0.7197
+raw,E5 VIF filter + Yeo-Johnson,2.4708,2.7755,1.5262,-4.437
+raw,E6 Top-3 by F-test (inside CV),1.5639,0.273,1.2257,0.3353
+raw,E6 Top-4 by F-test (inside CV),1.5781,0.2753,1.2383,0.323
+raw,E6 Top-5 by F-test (inside CV),1.6739,0.5521,1.2698,0.1019
+raw,E6 Top-6 by F-test (inside CV),1.8461,0.7927,1.3253,-0.0969
+raw,E7 Ridge (alpha by CV),1.9111,0.6872,1.3501,-0.1302
+raw,"E8 Elastic Net (alpha, l1 by CV)",1.8716,0.6513,1.3366,-0.0733
+capped,"C1 All 8, rest days capped at +-10",1.6316,0.2864,1.2704,0.2764
+capped,C2 Capped + Yeo-Johnson,1.6503,0.2936,1.2798,0.2479
+capped,C3 Capped + signed-log + scaling,1.592,0.2544,1.2512,0.3137
+capped,C4 Capped + VIF filter (VIF<=5),1.6764,0.3036,1.3165,0.2423
+capped,C5 Capped + Huber robust regression,1.6268,0.2714,1.2785,0.2832
+capped,C6 Capped + Top-3 by F-test,1.5639,0.273,1.2257,0.3353
+capped,C6 Capped + Top-4 by F-test,1.5781,0.2753,1.2383,0.323
+capped,C7 Capped + Ridge,1.5974,0.2902,1.2433,0.3165
+competing,Random Forest (capped data),1.6349,0.2584,1.2912,0.2697
+competing,Gradient Boosting (capped data),1.6369,0.2663,1.2855,0.2667
+competing,"SVR, RBF kernel (capped data)",1.6144,0.2939,1.2505,0.3007
+competing,"k-Nearest Neighbours, k=10 (capped data)",1.7356,0.3055,1.3803,0.193
