@@ -1,8 +1,7 @@
 variable,source_name,url,retrieval_date,data_as_of,why_needed
-confed_strength,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-11,WC 1998-2022 only,Historical World Cup results needed to build confederation strength; UEFA coefficient does not exist for non-UEFA teams
-
-match_results,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-11,WC 2026 final scores,Match scores for all 104 matches (response variable) and venue country for host variable
-
-form_features,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-11,matches before each WC 2026 match,Last-10 goals per game rest days and matches in 12 months need results of all international matches including friendlies
-
+match_results,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-14,WC 2026 final scores,Match scores for all 104 matches (response variable) and venue country for host variable
+form_features,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-14,matches before each WC 2026 match,Last-10 goals per game rest days and matches in 12 months need results of all international matches including friendlies
+confed_strength,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-14,WC 1998-2022 only,Historical World Cup results needed to build confederation strength; UEFA coefficient does not exist for non-UEFA teams
+fifa_points,FIFA/Coca-Cola Men's World Ranking,https://inside.fifa.com/fifa-rankings/world-ranking/men,2026-10-14,ranking release of 11 June 2026,Official ranking points for each team before the tournament
+market_value,Transfermarkt (archived copy),https://web.archive.org/web/20260713202055/https://www.transfermarkt.com/weltmeisterschaft/teilnehmer/pokalwettbewerb/FIWC/saison_id/2025,2026-10-14,13 July 2026 (during tournament),Squad market value is only available on Transfermarkt; approved by instructor on Padlet
 avg_caps,Wikipedia - 2026 FIFA World Cup squads,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads,2026-10-14,caps as of 11 June 2026 (start of tournament),Pre-tournament caps for all 48 squads in one consistent table
