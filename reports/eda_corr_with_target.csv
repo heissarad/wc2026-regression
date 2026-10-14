@@ -1,0 +1,9 @@
+variable,pearson_r,p_value,spearman_rho
+fifa_pts_diff,0.645,0.0,0.6676
+market_value_diff,0.5738,0.0,0.6103
+goals_pg_last10_diff,0.4121,0.0,0.4486
+confed_strength_diff,0.3414,0.0004,0.3699
+host_diff,0.123,0.2136,0.1178
+squad_caps_diff,0.1186,0.2304,0.1757
+matches_12m_diff,-0.0615,0.535,-0.0892
+rest_days_diff,0.0428,0.6659,0.0657
