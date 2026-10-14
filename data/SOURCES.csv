@@ -4,3 +4,5 @@ confed_strength,International football results dataset (martj42),https://github.
 match_results,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-11,WC 2026 final scores,Match scores for all 104 matches (response variable) and venue country for host variable
 
 form_features,International football results dataset (martj42),https://github.com/martj42/international_results,2026-10-11,matches before each WC 2026 match,Last-10 goals per game rest days and matches in 12 months need results of all international matches including friendlies
+
+avg_caps,Wikipedia - 2026 FIFA World Cup squads,https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads,2026-10-14,caps as of 11 June 2026 (start of tournament),Pre-tournament caps for all 48 squads in one consistent table
